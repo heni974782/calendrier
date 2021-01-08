@@ -1,7 +1,9 @@
 export const environment = {  
   production: true,
 
-  firebase : {  // relier notre calendrier avec notre backend choisie
+  
+// firebase is the configuration of our backend
+  firebase : {  
     apiKey: "AIzaSyDdohrlTYhGKSqsideMImMDUbS8cZj3NZk",
   authDomain: "ionic-4-custom-calendar-d260a.firebaseapp.com",
   projectId: "ionic-4-custom-calendar-d260a",

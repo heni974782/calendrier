@@ -9,13 +9,16 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
-import { NgCalendarModule  } from 'ionic2-calendar';
+import { NgCalendarModule  } from 'ionic2-calendar'; //we include the package of the calendar istalled 
 
 
 
+// next 3 includes are necessary to include the fire base as backend 
 import { AngularFireModule } from '@angular/fire';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFirestoreModule } from '@angular/fire/firestore';  // latest DB
 import { AngularFireAuthModule } from '@angular/fire/auth';
+
+
 import { environment } from 'src/environments/environment';
 
 
@@ -27,7 +30,9 @@ import { environment } from 'src/environments/environment';
     IonicModule.forRoot(), 
     AppRoutingModule,
     NgCalendarModule,
-    AngularFireModule.initializeApp(environment.firebase),//environment.firebase
+
+    // initialize the imports
+    AngularFireModule.initializeApp(environment.firebase), // associate the configuration to our initialization
     AngularFirestoreModule,
     AngularFireAuthModule,
 

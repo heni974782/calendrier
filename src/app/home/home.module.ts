@@ -4,7 +4,7 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
-import { NgCalendarModule  } from 'ionic2-calendar'; // module de calendrier de ionic/angular
+import { NgCalendarModule  } from 'ionic2-calendar'; //we include the package of the calendar istalled 
 
 import { HomePageRoutingModule } from './home-routing.module';
 
@@ -15,7 +15,8 @@ import { HomePageRoutingModule } from './home-routing.module';
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
-    NgCalendarModule,
+    NgCalendarModule, //we include the package of the calendar istalled 
+
   ],
  
   declarations: [HomePage]
